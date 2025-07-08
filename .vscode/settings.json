@@ -12,5 +12,5 @@
     "source.organizeImports.biome": "explicit"
   },
   "biome.enabled": true,
-	"biome.lsp.bin": "./server/node_modules/.bin/biome"
+	"biome.lsp.bin": "./node_modules/.bin/biome"
 }
