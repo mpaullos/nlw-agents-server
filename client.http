@@ -7,7 +7,7 @@ GET {{baseUrl}}/health
 
 ###
 
-# GET Rooms
+# Get rooms
 # @name getRooms
 GET {{baseUrl}}/rooms
 
@@ -18,11 +18,9 @@ GET {{baseUrl}}/rooms
 POST {{baseUrl}}/rooms
 Content-Type: application/json
 
-
-
 {
-  "name": "Sala de Teste",
-  "description": "Essa é uma slaa de teste"
+  "name": "Sala de teste",
+  "description": "Essa é uma sala de teste"
 }
 
 ###
@@ -31,7 +29,7 @@ Content-Type: application/json
 
 ###
 
-# GET room questions
+# Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
 
@@ -39,21 +37,9 @@ GET {{baseUrl}}/rooms/{{roomId}}/questions
 
 # Create question
 # @name createQuestion
-POST {{baseUrl}}/rooms/{{roomId}}/questions
+POST {{baseUrl}}/rooms/3bedbc7f-9cc3-4d1c-a43f-09d0c92a5f4b/questions
 Content-Type: application/json
 
 {
-  "question": "Qual o sentido da vida?"
-}
-
-
-###
-
-# Create question
-# @name createQuestion
-POST {{baseUrl}}/rooms/{{roomId}}/questions
-Content-Type: application/json
-
-{
-  "question": "Qual o sentido da vida?"
+  "question": "O que é Vue.js e a sua diferença em relação ao Angular?"
 }
